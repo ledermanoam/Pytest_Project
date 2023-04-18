@@ -1,0 +1,7 @@
+User   city        email
+Jake   Barcelona   jake@gmail.com
+Lucas  Doha        Lucas@gmail.com
+Amaan  London      Amman@gmail.com
+Akki   Pune        Akki@gmal.com
+Noam   Lederman    Noam@gmail.com
+Adi    Lederman    Adi@gmail.com
