@@ -28,4 +28,28 @@ for key, value in r.json().items():
     print(key,":",value)
 print(r.json()["headers"]["Host"])
 
+############################################################################
+print("********************************************************************")
+
+URL = 'https://httpbin.org/post'
+payload = {'key1':'noam','key2':'lederman','key3':'054797885'}
+r = requests.post(URL,json=payload)
+print(r.url)
+print(r.status_code)
+print(r.text)
+
+#############################################################################
+
+# custom the header form ############
+
+print("**************************************")
+
+URL = 'https://httpbin.org/post'
+payload = {'key1':'noam','key2':'lederman','key3':'054797885'}
+headers = {'accept': 'application/json', 'Content-Type': 'application/json'}
+r = requests.post(URL,json=payload,headers =headers )
+print(r.text)
+print(r.request.headers)
+print(r.headers)
+print(r.status_code)
 
