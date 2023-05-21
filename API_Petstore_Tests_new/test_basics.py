@@ -12,6 +12,7 @@ def test_getPetByID_response():
     data = response.json()
     print(json.dumps(data, indent=3))
     assert len(data) > 0, "empty response"
+    assert data['id'] == int(petID)
 
 def test_add_newPet():
     url = baseURI

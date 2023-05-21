@@ -10,7 +10,7 @@ def validateJson(json_file_example):
     except ValueError as err:
       return False
     return True
-JsonString = """{"name":"naom","pro":"QA","email":"lederma@gmail.com"}"""
+JsonString = """{"name":"noam","pro":"QA","email":"lederma@gmail.com"}"""
 
 isValid = validateJson(JsonString)
 print("json string passed is valid ?", isValid)
