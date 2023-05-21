@@ -13,6 +13,7 @@ def test_getPetByID_response():
     assert resp_status == 200
     print('Time Taken: ', timeTaken)
 
+
 #Test updating a pet
 def test_updatingPet():
     payload = {'id':int(petID),'name':'Cutie','status':'pending'}
