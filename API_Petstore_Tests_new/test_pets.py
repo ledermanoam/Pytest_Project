@@ -1,7 +1,8 @@
 import json
-
 from utils.myConfigParser import *
 from utils.myUtills import getAPIData,putData,deleteData
+import logging
+LOGGER = logging.getLogger(__name__)
 
 baseURI = getPetAPIURL()
 petID = "194"
@@ -18,6 +19,7 @@ def test_getPetByID_response():
 def test_updatingPet():
     payload = {'id':int(petID),'name':'Cutie','status':'pending'}
     data,resp_status,timeTaken = putData(baseURI,payload)
+    LOGGER.info("API Call done")
     assert data['id'] == int(petID)
     print(data)
 

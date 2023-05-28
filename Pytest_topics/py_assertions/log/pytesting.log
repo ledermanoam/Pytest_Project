@@ -1,0 +1,3 @@
+23-05-28 23:28:03 [ WARNING] [root] warning Logs (test_loggings.py:5)
+23-05-28 23:28:03 [   ERROR] [root] Error Logs (test_loggings.py:6)
+23-05-28 23:28:03 [CRITICAL] [Pytest_topics.py_assertions.test_loggings] critical Logs (test_loggings.py:7)
